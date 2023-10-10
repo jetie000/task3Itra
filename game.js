@@ -83,10 +83,10 @@ const game = (args) => {
         if (yourMove == '0')
             return;
         else {
-            console.log("Your move: " + parseInt(yourMove));
-            console.log("Computer move: " + (Bot.moves[Bot.currentTurn - 1] + 1));
             let yourMovearg = args[parseInt(yourMove) - 1];
             let botMoveArg = args[Bot.moves[Bot.currentTurn - 1]];
+            console.log("Your move: " + yourMovearg);
+            console.log("Computer move: " + botMoveArg);
             if (Help.rules[parseInt(yourMove) - 1][yourMovearg][botMoveArg] == 'Win'){
                 console.log('You win!');
             }
