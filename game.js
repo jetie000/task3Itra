@@ -73,7 +73,6 @@ class MyCypher {
         crypto.getRandomValues(myArray);
         let sourceKey = "";
         for(let element of myArray){
-            console.log(element.toString(16));
             sourceKey = sourceKey.concat(element.toString(16)[0]);
         }
         // const sourceKey = crypto.generateKeySync('hmac', { length: 256 }).export().toString('hex');
