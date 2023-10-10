@@ -63,12 +63,6 @@ const game = (args) => {
     Help.setRules(args);
     while (true) {
         Bot.makeMove(args);
-        // console.log('ALL HMACS');
-        // for (let hmac of MyCypher.HMACs)
-        //     console.log(hmac);
-        // console.log('ALL SOURCE');
-        // for (let source of MyCypher.sourceKeys)
-        //     console.log(source);
         console.log('HMAC: ' + MyCypher.HMACs[Bot.currentTurn - 1]);
         console.log('Available moves:');
         for (let arg of args) {
